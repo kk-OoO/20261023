@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ NEON CYBER RUNNER 2026 (Next.js × Vercel)
 
-## Getting Started
+Next.js 16 + React 19 + Tailwind CSS 4 で構築された、サイバーパンク風ネオンスネークゲームです。  
+Vercel デプロイ課題用プロジェクトとして最適化されています。
 
-First, run the development server:
+---
+
+## 🎮 ゲームの特徴
+- **Web Audio API による効果音 & レトロBGM**: 外部音源不要、ブラウザ上でリアルタイム合成
+- **ネオンエフェクト & パーティクル**: 取得時の光の演出
+- **3種類のアイテム**:
+  - 🟢 **グリーンオーブ**: +10点、長さ成長
+  - 🟡 **ゴールドスター**: +50点、レアボーナス
+  - 🔵 **タイムワープ**: +25点、一時的にスピード減速
+- **難易度選択**: EASY / NORMAL / HARD
+- **スマホ・PC両対応**: 矢印キー/WASDに加え、オンスクリーン十字キーを完備
+- **ハイスコア保存**: ブラウザ（localStorage）に自動保存
+
+---
+
+## 💻 ローカルでの起動方法 (ローカル確認)
+
+PowerShell またはターミナルで本フォルダを開き、以下を実行します：
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで `http://localhost:3000` を開くとゲームが遊べます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Vercel へのデプロイ手順 (課題の提出方法)
 
-## Learn More
+### 方法1: GitHub連携による王道デプロイ（推奨）
 
-To learn more about Next.js, take a look at the following resources:
+1. **GitHub でリポジトリを作成**
+   - [GitHub](https://github.com/) にアクセスし、右上の「+」から「New repository」をクリック
+   - リポジトリ名（例: `neon-cyber-runner`）を入力して「Create repository」
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **ローカルから GitHub に Push**
+   ターミナルで以下を実行します：
+   ```powershell
+   git remote add origin https://github.com/<あなたのユーザー名>/<リポジトリ名>.git
+   git branch -M main
+   git push -u origin main
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Vercel と GitHub を連携してデプロイ**
+   - [Vercel](https://vercel.com/) にログイン（「Continue with GitHub」）
+   - 「Add New...」→「Project」をクリック
+   - 先ほど作成した GitHub リポジトリを選択して「Import」
+   - 「Deploy」ボタンをクリックすれば、約1分で全世界に自動公開されます！
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 方法2: ワンクリック Claim (即時デプロイ済みリンク)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+すでに Vercel 上にデプロイ済みのインスタンスが生成されています：
+- **ゲーム公開URL**: [https://turbo-lilac-ys3yg3p.tmp.now](https://turbo-lilac-ys3yg3p.tmp.now)
+- **Claim URL (ご自身のアカウントに紐付けるリンク)**: [https://vercel.com/claim-deployment?code=f12c2c52-db9d-452a-a191-2ae5be48d423](https://vercel.com/claim-deployment?code=f12c2c52-db9d-452a-a191-2ae5be48d423)
